@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-image: url(/images/bg-img.webp);
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+.header {
+    margin-top: 3em;
+    text-align: center;
+    color: white;
+}
+
+.textbody {
+    text-align: center;
+    color: white;
+}
+
+.form-container {
+    height: 50vh;
+    width: 80vw;
+    margin-left: 8em;
+    padding-top: 3em;
+    border: 5px solid rgba(119, 111, 111, 0.466);
+
+    /* css glass effect */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+}
+
+form {
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 10em;
+}
+
+input {
+    width: 70%;
+    height: 6vh;
+    margin-bottom: 2em;
+    border: 5px solid rgba(119, 111, 111, 0.466);
+
+    /* css glass effect */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+label {
+    /* border: 2px solid green; */
+    color: black;
+
+}
+
+button {
+    margin: auto;
+    /* width: 100%; */
+    border: 5px solid rgba(119, 111, 111, 0.466);
+
+    /* css glass effect */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
