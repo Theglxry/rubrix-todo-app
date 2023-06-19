@@ -95,11 +95,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: 2px solid red;
-  /* transition: width 0.3s ease-in-out; */
-}
 
-.container .todo-header-wrapper {
+  /* border: 2px solid red; */
+ 
+ }
+
+
+.todo-header-wrapper {
   width: 100%;
   padding: 2rem 0 3rem 0;
   background-image: linear-gradient(
@@ -109,7 +111,10 @@ h3 {
     linear-gradient(101deg, #78e4ff, #ff48fa);
 }
 
-.container .todo-header-wrapper .todo-header {
+.todo-header-wrapper h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--light-cream);
   font-size: var(--font-size-large);
@@ -118,10 +123,18 @@ h3 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+.todo-header-wrapper img{
+
+  max-width: 30px;
+  margin-left: 10px;
+}
+
+
 .task-wrapper {
   width: 100%;
   padding: 10rem;
-  border: 5px solid rgb(0, 11, 128);
+  /* border: 5px solid rgb(0, 11, 128); */
 }
 /*_____________________________________form styling_________________________   */
 .form-container {
@@ -138,11 +151,7 @@ h3 {
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid rgba(255, 255, 255, 0.22);
 }
-
-/* .input-and-button {
-  width: 100%;
-  border: 2px solid yellow;
-} */
+ 
 
 .form-container h2 {
   padding: 1rem;
@@ -178,7 +187,7 @@ input[type="password"] {
 /*____________________________buttons styling_____________________*/
 
 .input-field,
-.btn,
+#add-btn,
 input[type="submit"] {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-reg);
@@ -190,19 +199,10 @@ input[type="submit"] {
   border: none;
   border-radius: 3px;
   border-right: 5px solid rgb(253, 19, 242);
-  /* border-right: 5px solid rgb(131, 22, 126); */
-
   height: 20px;
 }
 
-/* styling for checkboxes and radio buttons */
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 5px;
-  cursor: pointer;
-
-}
-
+ 
 /* _________________________task styling_________________ */
 .task-list-container {
   width: 100%;
@@ -218,69 +218,58 @@ input[type="radio"] {
 }
 
 .task-list-wrapper {
-  /* width: 50%; */
   padding: 5rem;
   margin: 0 auto;
 }
+ 
+ 
 
-.task-list-container ul {
+ 
+ /* _______________________NEW TASK STYLING ___________ */
+
+ul li {
   list-style: none;
-  padding: 0;
-}
-
-.task-list-container li {
-  display: flex;
-  align-items: center;
-}
-
-.task-item {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.task-list-container input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-/* .task-list-container label {
-  Add desired styling for the labels
-} */
-
-/* ____________--DELETE BUTTON____________ */
-.task-list-wrapper .del-btn__icon:hover {
+  font-size: 10px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
   cursor: pointer;
-  fill: red;
+  border-bottom: 1px solid #dfd4d4;
+  position: relative;
 }
 
-.del-btn__icon {
-  display: block;
-  margin: -0.75em 0 -0.75em -0.75em;
-  pointer-events: none;
-  max-width: 3em;
-  /* height: 3em; */
-  /* border: 2px solid red; */
+/* adding check box before the list */
+ul li::before{
+   content: '';
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   border-radius: 50px;
+   background-image: url("images/unchecked.png") ;
+   background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+   /* background-color: #ff5945; */
 }
 
-.del-btn__icon-lid {
-  transform-origin: 12px 5px;
-}
-.del-btn__icon-can {
-  transform-origin: 12px 18px;
-}
-.del-btn__letters {
-  display: flex;
+ul li.checked {
+   color: #fff;
+   text-decoration: line-through;     
 }
 
-.del-btn__letter,
-.del-btn__letter-box {
-  display: inline-block;
+ul li.checked::before {
+  background-image: url("images/checked.png");
 }
+ 
 
-.delete-button {
-  margin-left: 10px;
-  /* Add desired styling for the delete button */
-}
+
+
+
+
+
+
+
+
 /* _______________________-MEDIA QUERIES________________________-- */
 @media screen and (max-width: 420px) {
   .task-wrapper {

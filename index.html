@@ -18,7 +18,7 @@
     <div class="container">
       <!-- app header section -->
       <div class="todo-header-wrapper">
-        <h1 class="todo-header">-RUBRIX-</h1>
+        <h1>-RUBRIX- <img src="images/icon.png"></h1>
       </div>
 
       <!-- task section -->
@@ -34,105 +34,41 @@
           <!-- text area -->
           <div class="input-and-button">
             <input class="input-field" type="text" id="new-task" placeholder="add a new task?" required />
-            <button class="btn" type="submit">+</button>
+            <button id="add-btn" type="submit">+</button>
           </div>
         </form>
+
+
+
+
+
+
+
+
 
         <!-- TASK LIST -->
         <div class="task-list-container">
           <h3>TASK LIST</h3>
+
           <div class="task-list-wrapper">
-            <ul>
-              <!-- task 1 -->
-              <li>
-                <div class="task-item">
-                  <input type="checkbox" id="task_1" />
-                  <label for="task_1">Lorem ipsum dolor sit.</label>
-                </div>
-                <!-- del btn -->
-                <button>
-                  <svg class="del-btn__icon" viewBox="0 0 48 48" width="48px" height="48px" aria-hidden="true">
-                    <clipPath id="can-clip">
-                      <rect class="del-btn__icon-can-fill" x="5" y="24" width="14" height="11" />
-                    </clipPath>
-                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(12,12)">
-                      <g class="del-btn__icon-lid">
-                        <polyline points="9,5 9,1 15,1 15,5" />
-                        <polyline points="4,5 20,5" />
-                      </g>
-                      <g class="del-btn__icon-can">
-                        <g stroke-width="0">
-                          <polyline id="can-fill" points="6,10 7,23 17,23 18,10" />
-                          <use clip-path="url(#can-clip)" href="#can-fill" fill="#fff" />
-                        </g>
-                        <polyline points="6,10 7,23 17,23 18,10" />
-                      </g>
-                    </g>
-                  </svg>
-                </button>
-              </li>
-              <hr />
-
-              <!-- task 2 -->
-              <li>
-                <div class="task-item">
-                  <input type="checkbox" id="task_2" />
-                  <label for="task_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur, atque recusandae velit quas nulla.</label>
-                </div>
-                <!-- del btn -->
-                <button>
-                  <svg class="del-btn__icon" viewBox="0 0 48 48" width="48px" height="48px" aria-hidden="true">
-                    <clipPath id="can-clip">
-                      <rect class="del-btn__icon-can-fill" x="5" y="24" width="14" height="11" />
-                    </clipPath>
-                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(12,12)">
-                      <g class="del-btn__icon-lid">
-                        <polyline points="9,5 9,1 15,1 15,5" />
-                        <polyline points="4,5 20,5" />
-                      </g>
-                      <g class="del-btn__icon-can">
-                        <g stroke-width="0">
-                          <polyline id="can-fill" points="6,10 7,23 17,23 18,10" />
-                          <use clip-path="url(#can-clip)" href="#can-fill" fill="#fff" />
-                        </g>
-                        <polyline points="6,10 7,23 17,23 18,10" />
-                      </g>
-                    </g>
-                  </svg>
-                </button>
-              </li>
-              <hr />
-
-              <!-- task 3 -->
-              <li>
-                <div class="task-item">
-                  <input type="checkbox" id="task_3" />
-                  <label for="task_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur, atque recusandae velit quas nulla.</label>
-                </div>
-                <button>
-                  <svg class="del-btn__icon" viewBox="0 0 48 48" width="48px" height="48px" aria-hidden="true">
-                    <clipPath id="can-clip">
-                      <rect class="del-btn__icon-can-fill" x="5" y="24" width="14" height="11" />
-                    </clipPath>
-                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(12,12)">
-                      <g class="del-btn__icon-lid">
-                        <polyline points="9,5 9,1 15,1 15,5" />
-                        <polyline points="4,5 20,5" />
-                      </g>
-                      <g class="del-btn__icon-can">
-                        <g stroke-width="0">
-                          <polyline id="can-fill" points="6,10 7,23 17,23 18,10" />
-                          <use clip-path="url(#can-clip)" href="#can-fill" fill="#fff" />
-                        </g>
-                        <polyline points="6,10 7,23 17,23 18,10" />
-                      </g>
-                    </g>
-                  </svg>
-                </button>
-              </li>
-              <hr />
-            </ul>
+                <ul id="list-container">
+                  <li class="checked">Go to the gym!</li>
+                  <!-- <hr> -->
+                  <li>Go to the gym!</li>
+                  <!-- <hr> -->
+                  <li>Go to the gym!</li>
+                  <!-- <hr> -->
+                </ul>
           </div>
+            
+
+
+
+
+
+
+
+          
         </div>
       </div>
     </div>
