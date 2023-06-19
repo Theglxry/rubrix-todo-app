@@ -13,7 +13,15 @@ document.getElementById('add-btn').addEventListener('click', function addTask(e)
         let listItem = document.createElement("li");
         listItem.innerHTML = newTask.value;
 
-        listContainer.appendChild("listItem");
+    
+
+    // Append the delete icon to the list item
+    listItem.appendChild(deleteIcon);
+
+
+        listContainer.appendChild(listItem);
+            newTask.value = ''; // Clear the input field
+
     }
 
 
