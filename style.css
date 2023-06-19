@@ -116,6 +116,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1rem;
   color: var(--light-cream);
   font-size: var(--font-size-large);
   background-color: var(--Very-dark-purple);
@@ -160,7 +161,12 @@ h3 {
 .form-container input[type="text"] {
   border: none;
   border-radius: 5px;
-  padding: 2rem;
+  padding: 1rem;
+  /* padding: 5px; */
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-bottom: 10px;
   border-left: 5px solid rgb(253, 19, 242);
   background-color: rgb(254, 241, 254);
 }
@@ -170,36 +176,21 @@ input::-webkit-input-placeholder {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-reg);
 }
-/*________________________text styling_____________________________________*/
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
-  padding: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  margin-bottom: 10px;
-}
 
 /*____________________________buttons styling_____________________*/
 
-.input-field,
-#add-btn,
-input[type="submit"] {
+#add-btn {
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-reg);
   color: var(--primary-accent);
   padding: 5px;
-  margin: 0 0.5rem 0 0rem;
+  margin-left: 1rem;
   background-color: var(--white);
-  /* background-color: #770615; */
   border: none;
   border-radius: 3px;
   border-right: 5px solid rgb(253, 19, 242);
   height: 20px;
+  cursor: pointer;
 }
 
  
@@ -229,7 +220,7 @@ input[type="submit"] {
 
 ul li {
   list-style: none;
-  font-size: 10px;
+  font-size: 12px;
   padding: 12px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
