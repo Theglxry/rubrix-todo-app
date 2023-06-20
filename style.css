@@ -209,7 +209,7 @@ input::-webkit-input-placeholder {
 }
 
 .task-list-wrapper {
-  padding: 5rem;
+  padding: 2rem;
   margin: 0 auto;
 }
  
@@ -219,9 +219,13 @@ input::-webkit-input-placeholder {
  /* _______________________NEW TASK STYLING ___________ */
 
 ul li {
+  /* text-align: left; */
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
   font-size: 12px;
-  padding: 12px 8px 12px 50px;
+  padding: 12px 8px 12px 35px;
   user-select: none;
   cursor: pointer;
   border-bottom: 1px solid #dfd4d4;
@@ -256,10 +260,20 @@ ul li.checked::before {
 
 
 
+/* ______________ JS CLASS _____________ */
 
+ul li img {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  max-width: 3rem;
+  flex-grow: 1;
 
+}
 
-
+ul li img:hover{
+  cursor: pointer;
+}
 
 /* _______________________-MEDIA QUERIES________________________-- */
 @media screen and (max-width: 420px) {
