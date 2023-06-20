@@ -279,7 +279,7 @@ ul li img:hover{
 @media screen and (max-width: 420px) {
   .task-wrapper {
     width: 100%;
-    padding: 5rem;
+    padding: 1rem;
   }
 }
 
