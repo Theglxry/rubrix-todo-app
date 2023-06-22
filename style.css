@@ -211,6 +211,7 @@ input::-webkit-input-placeholder {
 .task-list-wrapper {
   padding: 2rem;
   margin: 0 auto;
+
 }
  
  
@@ -222,12 +223,12 @@ ul li {
   /* text-align: left; */
   display: flex;
   flex-wrap: wrap;
-
+  color: var(--white);
   list-style: none;
   font-size: 12px;
-  padding: 12px 8px 12px 35px;
   user-select: none;
   cursor: pointer;
+  padding: 12px 8px 12px 35px;
   border-bottom: 1px solid #dfd4d4;
   position: relative;
 }
@@ -244,6 +245,7 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+
    /* background-color: #ff5945; */
 }
 
